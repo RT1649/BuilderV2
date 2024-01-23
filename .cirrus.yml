@@ -1,0 +1,25 @@
+env:
+    DEVICE: fleur #Enter your device codename
+    ROMREPO: https://github.com/crdroidandroid/android.git -b 13.0 --git-lfs #Enter roms's repo link
+    LOCALMANIFEST: https://github.com/RT1648/local_manifest-fleurprebuiltgit #Enter device local_manifest link & make sure all the neccessary repos are available in your localmanifest
+    MAKEFILENAME: fleur_RMP6768 #Enter makefile name example-aosp_fleur,etc...
+    VARIENT: userdebug #Enter build varient among these - eng,user & userdebug
+    TARGET: mka bacon #Enter target example- m bacon, make bacon , mka bacon,etc...
+    LINK: #Enter ccache link if u already have for any rom, if u dont have one, collecct firstt
+
+# DONT MODIFY FROM HERE #
+task:
+  name: "AOSP"
+  timeout_in: 120m
+  container:
+      image: shazuxdd/ubuntu:latest
+      cpu: 8
+      memory: 32G
+  Setup_script:
+      - ./scripts/setup.sh || source scripts/setup.sh
+  Sync_script:
+      - ./scripts/sync.sh || source scripts/sync.sh
+  Build_script:
+      - ./scripts/build.sh || source scripts/build.sh
+  Upload_script:
+      - ./scripts/upload.sh || source scripts/upload.sh
