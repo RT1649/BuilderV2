@@ -13,7 +13,8 @@ echo "Compressing New CCACHE"
 time compress ccache 1
 
 uccache() {
-curl -F "file=@ccache.tar.gz" https://temp.sh/upload
+curl --upload-file ./ccache.tar.gz https://transfer.sh/ccache.tar.gz
+
 }
 echo "Uploading CCACHE"
 uccache
