@@ -21,7 +21,7 @@ uccache
 
 rom_upload() {
 cd ~/
-cd out/target/product/* && curl --upload-file ./crDroidAndroid-13.0-20240123-fleur-v9.13.zip https://transfer.sh/crDroidAndroid-13.0-20240123-fleur-v9.13.zip && curl --upload-file ./boot.img https://transfer.sh/boot.img
+cd out/target/product/* && curl --upload-file ./crDroidAndroid-13.0-20240124-fleur-v9.13.zip https://transfer.sh/crDroidAndroid-13.0-20240124-fleur-v9.13.zip && curl --upload-file ./boot.img https://transfer.sh/boot.img
 }
 echo "Uploading Rom & Boot From /Out"
 rom_upload
