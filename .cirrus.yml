@@ -16,10 +16,10 @@ task:
       cpu: 8
       memory: 32G
   Setup_script:
-      - ./scripts/setup.sh || source scripts/setup.sh
+      - ./scripts/setup.sh
   Sync_script:
-      - ./scripts/sync.sh || source scripts/sync.sh
+      - ./scripts/sync.sh
   Build_script:
-      - ./scripts/build.sh || source scripts/build.sh
+      - ./scripts/build.sh
   Upload_script:
-      - ./scripts/upload.sh || source scripts/upload.sh
+      - ./scripts/upload.sh

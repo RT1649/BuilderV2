@@ -1,6 +1,6 @@
 #!/bin/bash
 build() {
-source build/envsetup.sh || . build/envsetup.sh
+source build/envsetup.sh
 lunch $MAKEFILENAME-$VARIENT
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
