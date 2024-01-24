@@ -10,7 +10,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 ccache -M 50G
 ccache -o compression=true
 ccache -z
-$TARGET & sleep 90m
+$TARGET #& sleep 90m
 }
 echo "Initializing Build System"
 build
