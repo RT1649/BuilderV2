@@ -5,8 +5,7 @@ env:
     MAKEFILENAME: lineage_fleur #Enter makefile name example-aosp_fleur,etc...
     VARIENT: userdebug #Enter build varient among these - eng,user & userdebug
     TARGET: mka bacon #Enter target example- m bacon, make bacon , mka bacon,etc...
-    LINK: https://sourceforge.net/projects/fleur/files/ccache/crDroid_fleur/ccache.tar.gz/download #Enter ccache link if u already have for any rom, if u dont have one, collecct firstt
-
+    LINK:
 # DONT MODIFY FROM HERE #
 task:
   name: "AOSP"
