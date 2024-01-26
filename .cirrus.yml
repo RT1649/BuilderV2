@@ -1,11 +1,11 @@
 env:
     DEVICE: fleur #Enter your device codename
     ROMREPO: https://github.com/crdroidandroid/android.git -b 13.0 --git-lfs #Enter roms's repo link
-    LOCALMANIFEST: https://github.com/RT1649/local_manifest-fleurprebuilt.git #Enter device local_manifest link & make sure all the neccessary repos are available in your localmanifest
+    LOCALMANIFEST: https://github.com/RT1648/local_manifest-fleurprebuilt.git #Enter device local_manifest link & make sure all the neccessary repos are available in your localmanifest
     MAKEFILENAME: lineage_fleur #Enter makefile name example-aosp_fleur,etc...
     VARIENT: userdebug #Enter build varient among these - eng,user & userdebug
     TARGET: mka bacon #Enter target example- m bacon, make bacon , mka bacon,etc...
-    LINK:
+    LINK: https://sourceforge.net/projects/fleur/files/ccache/crDroid_fleur/ccache.tar.gz/download
 # DONT MODIFY FROM HERE #
 task:
   name: "AOSP"
